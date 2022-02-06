@@ -1,0 +1,18 @@
+lets you produce families of related objects without specifying their concrete classes.
+
+Example 1 :
+	
+	3 FAMILY : Modern, Victorian, ArtDeco
+		
+		Modern :
+			Chair
+			Sofa
+			CoffeTable
+		Victorian :
+			Chair
+			Sofa
+			CoffeTable
+		ArtDeco : 
+			Chair
+			Sofa
+			CoffeTable

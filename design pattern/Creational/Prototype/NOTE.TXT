@@ -1,0 +1,4 @@
+allows cloning objects, even complex ones, without coupling to their specific classes.
+Example 1
+
+	Author -- Page

@@ -1,0 +1,1 @@
+provides a simplified (but limited) interface to a complex system of classes, library or framework.

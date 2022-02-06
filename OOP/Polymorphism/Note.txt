@@ -1,0 +1,71 @@
+polymorphism 
+    is the ability (in programming) to present the same interface for 
+    differing underlying forms (data types).
+
+
+Method overloading 
+    increases the readability of the program.
+
+    Different ways to overload the method
+    There are two ways to overload the method in java
+
+    By changing number of arguments
+    By changing the data type
+
+
+
+Method Overriding
+    is used to provide the specific implementation of a method which is already provided by its superclass.
+    is used for runtime polymorphism
+
+    The method must have the same name as in the parent class
+    The method must have the same parameter as in the parent class.
+
+
+
+
+
+
+There are two types of binding "example :: java"
+
+    static binding
+
+        When type of the object is determined at compiled time(by the compiler), it is known as static binding
+
+            class Dog{  
+            private void eat(){System.out.println("dog is eating...");}  
+            
+            public static void main(String args[]){  
+            Dog d1=new Dog();  
+            d1.eat();  
+            }  
+            }  
+
+
+
+
+
+
+    Dynamic binding
+
+        When type of the object is determined at run-time, it is known as dynamic binding.
+
+            class Animal{  
+            void eat(){System.out.println("animal is eating...");}  
+            }  
+            
+            class Dog extends Animal{  
+            void eat(){System.out.println("dog is eating...");}  
+            
+            public static void main(String args[]){  
+            Animal a=new Dog();  
+            a.eat();  
+            }  
+            }  
+
+
+
+
+
+
+

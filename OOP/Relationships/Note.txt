@@ -1,0 +1,70 @@
+Association
+    Whenever two object are related with each other the relationship is called association between objects.
+Aggregation 
+    is specialized form of association. In aggregation objects have their own life-cycle but there is 
+    ownership and child object can not belongs to another parent object. But this is only an ownership not the life-cycle 
+    control of child control through parent object. Ex: Student and teacher, Person and address etc.
+Composition
+    is again specialize form of aggregation and we can call this as a �life and death� relationship. 
+    It is a strong type of aggregation. Child object dose not have their life-cycle and if parent object deletes all 
+    child object will also be deleted. Ex: House and room
+
+
+Dependency (references)
+
+    It means there is no conceptual link between two objects. e.g. EnrollmentService object references Student & Course objects (as method parameters or return types)
+
+    public class EnrollmentService {
+        public void enroll(Student s, Course c){}
+    }
+
+Association (has-a)
+
+    It means there is almost always a link between objects (they are associated). Order object has a Customer object
+
+        public class Order {
+            private Customer customer
+        }
+Aggregation (has-a + whole-part)
+        Special kind of association where there is whole-part relation between two objects. they might live without each other though.
+
+        public class PlayList {
+            private List<Song> songs;
+        }
+        OR
+
+        public class Computer {
+            private Monitor monitor;
+        }   
+        Note: the trickiest part is to distinguish aggregation from normal association. Honestly, I think this is open to different interpretations.
+
+Composition (has-a + whole-part + ownership)
+
+    Special kind of aggregation. An Apartment is composed of some Rooms. A Room cannot exist without an Apartment. when an apartment is deleted, all associated rooms are deleted as well.
+
+    public class Apartment{
+        private Room bedroom;
+        public Apartment() {
+        bedroom = new Room();
+        }
+    }
+
+
+
+
+
+Composition(has-a)/Inheritance(is-a)
+    Prefer composition when not sure about inheritance.
+    Prefer composition when not all the superclass functions were re-used by subclass.
+    Inheritance leads to tight coupling b/w subclass with superclass. Harder to maintain.
+    Inheritance hides some of compilation error which must be exposed.
+    Inheritance is easier to use than composition.
+    Composition make the code maintainable in future, especially when your assumption breaks (Using inheritance).
+    Discussion is incomplete without discussion of Liskov substitution principle.
+
+Composition/Inheritance...
+    Idea is to think twice while making decision.
+    One has to have proper reason while choosing composition/inheritance.
+    A car has "engine".
+    A car is a "vechicle".
+    Discussion?

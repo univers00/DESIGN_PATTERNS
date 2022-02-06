@@ -1,0 +1,99 @@
+Inheritance 
+    is a mechanism in OOP to design two or more entities that are different but 
+    share many common features.
+    Feature common to all classes are defined in the superclass.
+    The classes that inherit common features from the superclass are called subclasses.
+
+
+
+Why Inheritance? 
+    No need to re-invent the wheel.
+    Allow us to build on existing codes 
+    without having to copy it, paste it or rewrite it again, etc.
+    To create the subclass, we need to program 
+    only the differences between the superclass and subclass that inherits from it.
+    Make class more flexible.
+
+    Classes often share capabilities.
+    We want to avoid re-coding these capabilities.
+    >Improve maintainability
+    Reduce cost
+    Improve real world modeling.
+
+    PHP uses **extends** keyword to establish relationship between two classes.
+
+Abstract
+    A class which is declared as abstract is known as an abstract class. 
+    It can have abstract and non-abstract methods. 
+    It needs to be extended and its method implemented. 
+    It cannot be instantiated.
+
+
+    An abstract class must be declared with an abstract keyword.
+    It can have abstract and non-abstract methods.
+    It cannot be instantiated.
+    It can have constructors and static methods also.
+    It can have final methods which will force the subclass not to change the body of the method.
+
+Interfaces
+    Interfaces define the methods and properties 
+    that a class needs to implement, but doesn't actually implement them. This includes their access levels (public or private or 
+    protected) and the types of the inputs and outputs. Names of the functions must match, in addition to signatures and types. 
+    Interfaces provide good protection for developers, to ensure that different objects we want to be able to use interchangeably 
+    will all have the same call signatures. For this reason, interfaces are not mutable (you can't redefine a method on a class 
+    that uses an interface, and give it a different signature).
+    Classes can use an interface with either extends or implements, and unlike with class inheritance, can implement more than one 
+    (though you can only apply more than one using implements - you can write implements Interface1, Interface2 and so on).
+    It's also worth noting that you can define constants on interfaces if all the classes that will implement an interface need 
+    to share constant values, but true class inheritance is overkill, you can still do that with interfaces. Constants on an interface 
+    that a class implements can be accessed using self::
+    A class can both extend another class (inheritance) as well as implement an interface by writing extends <Class1> implements 
+    <Interface1>, <Interface2>.
+
+
+
+Traits
+    Traits in PHP are not technically inheritance they are composition. This allows for code reuse and typically 
+    defines a "has a" relationship vs. the "is a" relationship defined by inheritance.
+    Traits allow you to define methods and implement their behavior and reuse those pieces of logic in other classes 
+    without any hierarchy or assumed relationship between different objects that use a given trait, and importantly, 
+    with the ability to use as many as you like. Traits can also use other traits. Let�s add on to our example from above:
+
+
+
+
+Types of inheritance
+
+    Single Inheritance Example
+    When a class inherits another class, it is known as a single inheritance. In the example given below, Dog class 
+    inherits the Animal class, so there is the single inheritance.
+
+
+    Multilevel Inheritance Example
+    When there is a chain of inheritance, it is known as multilevel inheritance. As you can see in the example given 
+    below, BabyDog class inherits the Dog class which again inherits the Animal class, so there is a multilevel inheritance.
+
+    Hierarchical Inheritance Example
+    When two or more classes inherits a single class, it is known as hierarchical inheritance. In the example given 
+    below, Dog and Cat classes inherits the Animal class, so there is hierarchical inheritance.
+
+
+    ***********
+
+
+
+    ***********
+
+
+
+Super Keyword
+
+    The super keyword is a reference variable which is used to refer immediate parent class object.
+
+    Whenever you create the instance of subclass, an instance of parent class is created implicitly which is 
+    referred by super reference variable.
+
+    Usage of Java super Keyword
+    super can be used to refer immediate parent class instance variable.
+    super can be used to invoke immediate parent class method.
+    super() can be used to invoke immediate parent class constructor.

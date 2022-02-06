@@ -1,0 +1,32 @@
+lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+	simplifay :
+			function Add(parm1,param2)
+			execute
+				a = Add(2,5)
+				b = Add(a,10)
+				c = Add(b,55)
+				d = Add(c,Add(144,55)
+
+Example 1:
+	abstract FormElement
+			   Input
+			   FieldComposite
+			   		FieldSet
+					Form
+
+
+Form :
+          --> Form :
+	      --> Input
+	      --> Input
+	      --> Form :
+	    	  --> Input
+	      	  --> Input
+          --> Input
+          --> Input
+          --> Input
+          --> FieldSet
+
+
+
+

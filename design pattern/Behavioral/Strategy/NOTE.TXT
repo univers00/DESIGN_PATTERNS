@@ -1,0 +1,3 @@
+***** In the Strategy Pattern a context will choose the appropriate concrete extension of a class interface.
+
+****that turns a set of behaviors into objects and makes them interchangeable inside original context object.

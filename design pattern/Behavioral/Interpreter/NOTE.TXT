@@ -1,0 +1,1 @@
+In the interpreter pattern you define a language, parse requests in that language, and assign the appropriate class(es), method(s), etc to handle each request.

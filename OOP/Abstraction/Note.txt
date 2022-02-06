@@ -1,0 +1,54 @@
+Abstraction ::
+	is one of the key concepts of object-oriented programming (OOP) languages. Its main goal is to handle 	complexity by hiding unnecessary details from the user. That enables the user to implement more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden complexity.
+
+
+why ::
+
+    Helps the user to avoid writing the low level code
+    Avoids code duplication and increases re-usability.
+    Can change internal implementation of class independently without affecting the user.
+    Helps to increase security of an application or program as only important details are provided to the user.
+
+
+
+Abstraction in the real world ::
+
+    I'm a coffee addict. So, when I wake up in the morning, I go into my kitchen, switch on the coffee machine
+    and make coffee. Sounds familiar? Making coffee with a coffee machine is a good example of abstraction.
+    You need to know how to use your coffee machine to make coffee. You need to provide water and coffee beans,
+    switch it on and select the kind of coffee you 	want to get.
+    The thing you don't need to know is how the coffee machine is working internally to brew a fresh cup of delicious coffee.
+    You don't need to know the ideal temperature of the water or the amount of ground coffee you need to use.
+    Someone else worried about that and created a coffee machine that now acts as an abstraction and hides all these details.
+    You just interact with a simple interface that doesn't require any knowledge about the internal implementation.
+
+Advance ::
+
+    However, the same information once extracted can be used for a wide range of applications.
+    For instance, you can use the same data for hospital application, job portal application,
+    a Government database, etc. with little or no modification. Hence, it becomes your Master Data.
+    This is an advantage of Abstraction in OOPs.
+
+**********************************************************************************************************
+**********************************************************************************************************
+Example ::
+    Suppose you want to create a banking application
+    and you are asked to collect all the information
+    about your customer:
+                Fist Name
+                Last Name
+                ID
+                Contact
+                Address
+                Tax information
+                Favorite Food
+                Favorite Movie
+                Favorite Actor
+                Favorite player
+    But, not all the above information is required to create a banking application.
+
+    so when we to use concept of ABSTRACTION ::
+
+    So, you need to select only the useful information for your banking application from that pool.
+    Data like first name, last name,id,contact, address, tax information.
+    make sense for a banking application which is an Abstraction example in OOPs
